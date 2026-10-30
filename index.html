@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Inventory Management System</h1>
+<div class="container">
+
+    <h2>Add New Product</h2>
+
+    <div class="form-box">
+
+        <input type="text" id="productName"
+        placeholder="Enter Product Name">
+
+        <input type="number" id="productPrice"
+        placeholder="Enter Product Price">
+
+        <input type="number" id="productQuantity"
+        placeholder="Enter Product Quantity">
+
+        <button onclick="addProduct()">Add Product</button>
+
+    </div>
+<div class="product-section">
+
+    <h2>All Products</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+
+        <tbody id="productList">
+        </tbody>
+    </table>
+
+</div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
